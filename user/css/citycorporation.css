@@ -1,0 +1,78 @@
+.container{
+    height: 88vh;
+    padding: 3vh;
+    background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)),
+    url('../../assets/images/index.jpg');
+   
+    background-size: 60% 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.container .column{
+    width: 30%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    height: 70vh;
+    box-shadow: 0px 0px 10px black;
+    float: left;
+    padding: 1vh 5vh;
+}
+
+
+.title-header h3{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    margin-bottom: 5px;
+}
+.radiovote{
+    float: left;
+}
+.votername{
+    float: left;
+    line-height: 9vh;
+    padding-left: 10px;
+}
+    [type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+    
+    /* IMAGE STYLES */
+    [type=radio] + img {
+    cursor: pointer;
+    height: 55px;
+    width: 60px;
+    border-radius: 50%;
+    padding: 4px;
+    }
+     
+    /* CHECKED STYLES */
+    [type=radio]:checked + img {
+    outline: 5px solid #0f0;
+    } 
+    .candidate{
+        background-color: #ddd;
+        margin-bottom: 4px;
+        height: 9vh;
+
+    }
+
+    .candidate span{
+        line-height: 9vh;
+    }
+
+    .submit{
+        width: 96%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        padding: 10px;
+        font-size: 16px;
+        color: white;
+        margin-top: 20px;
+        background-color: green;
+    }

@@ -1,0 +1,58 @@
+.container .column{
+    width: 40%;
+    margin: 0 auto;
+    height: 60vh;
+    box-shadow: 0px 0px 10px black;
+    padding: 5vh;
+}
+
+/* .title-header{
+
+} */
+.title-header h3{
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    margin-bottom: 10px;
+}
+
+    [type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+    
+    /* IMAGE STYLES */
+    [type=radio] + img {
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+    padding: 5px;
+    }
+     
+    /* CHECKED STYLES */
+    [type=radio]:checked + img {
+    outline: 5px solid #0f0;
+    } 
+    .candidate{
+        background-color: #ddd;
+        margin-bottom: 4px;
+
+    }
+
+    .candidate span{
+        line-height: 100px;
+    }
+
+    .submit{
+        width: 40%;
+        margin: 30px auto;
+        display: block;
+        padding: 15px;
+        font-size: 20px;
+        color: white;
+        background-color: green;
+    }

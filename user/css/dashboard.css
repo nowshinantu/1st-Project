@@ -1,0 +1,153 @@
+@media only screen and (max-width:1400px) {
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    height: 12vh;
+    width: 100%;
+    
+    background-color: #3c3833;
+}
+
+
+
+.header .middle{
+    height: 12vh;
+    width: 60%;
+    float: left;
+    text-align: left;
+    padding-left: 3%;
+    padding-top: 10px;
+}
+
+.header .middle h1{
+    color: white;
+    text-shadow: 0px 0px 10px red;
+    font-size: 56px;
+}
+
+.header .right{
+    height: 15vh;
+    width: 40%;
+    float: left;
+    text-align: right;
+    padding-top: 2vh;
+    padding-right: 2vw;
+}
+.header .right button{
+    background-color: #649460;
+    padding: 2vh;
+    font-size: 22px;
+}
+
+.header .right button:hover{
+    background-color: orangered;
+}
+.container{
+    height: 88vh;
+    padding: 10vh;
+    background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)),
+    url('../../assets/images/index.jpg');
+   
+    background-size: 60% 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+h2{
+    height: 40px;
+}
+p{
+    float: left;
+    width: 50%;
+    margin-top: 5px;
+    
+}
+input{
+    float: left;
+    width: 50%;
+    margin-top: 5px;
+    border-radius: 7px;
+    padding: 3px;
+}
+/* button{
+    width: 30%;
+    height: 20px;
+    font-size: 15px;
+    margin-top: 20px;
+} */
+
+.container .column-first{
+    width: 40%;
+    margin-right: 10%;
+    height: 70vh;
+    box-shadow: 0px 0px 10px black;
+    float: left;
+    padding: 5vh;
+}
+
+.container .column-first .avater{
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.container .column-second{
+    width: 50%;
+    height: 70vh;
+    float: left;
+}
+
+.container .column-second .menu-section{
+    height: 20vh;
+    box-shadow: 0px 0px 10px black;
+    width: 100%;
+    margin-bottom: 5vh;
+    padding: 4vh;
+}
+.container .column-second .menu-section:hover{
+    background: orangered;
+}
+.container .column-second .menu-section .imgbox{
+    height: 12vh;
+    width: 120px;  
+    box-shadow: 0px 0px 10px black;
+    float: left;
+    text-align: center;
+    background-color: white;
+
+}
+
+.container .column-second .menu-section .imgbox img{
+    height: 100%;
+    width: 80%;
+}
+
+.container .column-second .menu-section .title{
+    float: left;
+    text-align: center;
+    padding: 3vh;
+    
+}
+.container .column-second .menu-section .title h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+
+.container .column-second .menu-section .title a {
+    text-decoration: none;
+    color: gray;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+}

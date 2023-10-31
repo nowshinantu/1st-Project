@@ -1,0 +1,79 @@
+<style>
+    .col-4{
+        width: 30%;
+        height: 70vh;
+        box-shadow: 0px 0px 10px black;
+        float: left;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        padding: 20px;
+    }
+
+    .col-4 h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+</style>
+<?php
+
+function city($x){
+$city = "SELECT * FROM electioncode INNER JOIN votingcode on votingcode.VotingCode = electioncode.AreaCode INNER JOIN AreaCode ON votingcode.AreaCode = AreaCode.AreaCode WHERE ElectionCode = '".$x."'";
+include_once('../db/dbconnect.php');
+    $cityrseult = getDataFromDB($city);
+
+    foreach($cityrseult as $cityrow){
+        return $cityrow['AreaName'];
+    }
+}
+
+?>
+<h1 style="text-align: center; margin-bottom: 10vh">Result of <?php echo city($_GET["ElectionCode"]) ?> City Corporation</h1>
+
+
+
+<div class="col-4">
+   <h2 style="text-align: center; margin-bottom: 5vh">Mayor</h2> 
+<?php 
+    $srql = "SELECT * FROM candidatecode INNER JOIN candidate_registration ON candidate_registration.CandidateCode = candidatecode.CandidateCode WHERE NominationFor = 'Mayor' AND ElectionCode = '".$_GET["ElectionCode"]."'  ORDER BY VoteCount DESC ";
+    include_once('../db/dbconnect.php');
+    $rseult = getDataFromDB($srql);
+    foreach($rseult as $srow){
+        ?>
+            <h3><?php echo $srow["Cname"] ?> : <?php echo $srow["VoteCount"] ?></h3>
+        <?php
+    }
+?>
+</div>
+
+
+
+<div class="col-4">
+   <h2 style="text-align: center; margin-bottom: 5vh">Councelor</h2> 
+<?php 
+    $srql = "SELECT * FROM candidatecode INNER JOIN candidate_registration ON candidate_registration.CandidateCode = candidatecode.CandidateCode WHERE NominationFor = 'Councelor' AND ElectionCode = '".$_GET["ElectionCode"]."'  ORDER BY VoteCount DESC ";
+    include_once('../db/dbconnect.php');
+    $rseult = getDataFromDB($srql);
+    foreach($rseult as $srow){
+        ?>
+            <h3><?php echo $srow["Cname"] ?> : <?php echo $srow["VoteCount"] ?></h3>
+        <?php
+    }
+?>
+</div>
+
+
+
+<div class="col-4">
+   <h2 style="text-align: center; margin-bottom: 5vh">Female Councelor</h2> 
+<?php 
+    $srql = "SELECT * FROM candidatecode INNER JOIN candidate_registration ON candidate_registration.CandidateCode = candidatecode.CandidateCode WHERE NominationFor = 'Female Councelor' AND ElectionCode = '".$_GET["ElectionCode"]."'  ORDER BY VoteCount DESC ";
+    include_once('../db/dbconnect.php');
+    $rseult = getDataFromDB($srql);
+    foreach($rseult as $srow){
+        ?>
+            <h3><?php echo $srow["Cname"] ?> : <?php echo $srow["VoteCount"] ?></h3>
+        <?php
+    }
+?>
+</div>

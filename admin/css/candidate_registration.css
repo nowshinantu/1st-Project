@@ -1,0 +1,109 @@
+@media only screen and (max-width:1400px) {
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main_part{
+    
+    box-shadow: 0px 0px 10px black;
+    font-size: 20px;
+    width: 85%;
+    height: 92vh;
+    margin: 0px auto;
+    padding: 1px 40px;
+    border: 2px solid black;
+    
+}
+.main_part p{
+    font-size: 30px;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    margin-left: 20px;
+    text-align: center;
+      
+}
+.start .main{
+    float: left;
+    width: 30%;
+    /* text-align: center; */
+    
+}
+.start .some{
+    float: left;
+    width: 70%;
+
+}
+.start .some input[type=text]{
+    
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 7px;
+    background-color:   transparent  ;
+    
+}
+.start .some input[type=date]{
+    
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 7px;
+    background-color:   transparent  ;
+}
+.start .some input[type=email]{
+    
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 7px;
+    background-color:   transparent  ;
+    
+}
+
+.start .some input[type=password]{
+    
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 7px;
+    background-color:   transparent  ;
+    
+}
+.start .some input[type=number]{
+    
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 7px;
+    background-color:   transparent  ;
+    
+}
+
+.start select{
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 7px;
+    background-color:   transparent  ;
+}
+.start .some select{
+    width: 100%;
+}
+.start .some textarea{
+    border-radius: 7px;
+    width: 100%;
+}
+.main_part .any input{
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-right: 50px;
+    border-radius: 10px;
+    width:100%;
+    padding: 5px;
+    background-color: beige;
+}
+}
